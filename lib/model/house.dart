@@ -49,35 +49,35 @@ var houseList = [
       imageUrl:
           "https://images.timesproperty.com/blog/4047/front_house_design.jpg"),
   House(
-      name: "Villa 1",
-      price: 1000,
+      name: "Jogjakarta Villa",
+      price: 2000,
       type: "Villa",
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://asset.kompas.com/crops/rYHmAv4mfDvUMQC6OekMqb7j6EU=/0x202:1080x922/750x500/data/photo/2022/09/08/6319c1acd3086.jpg"),
+          "https://static.jogjaasik.com/uploads/2019/05/7-Rekomendasi-Villa-Terbaik-Di-Jogja-Liburan-Mewah-Dengan-Budget-Murah-Meriah.jpg"),
   House(
-      name: "Villa 1",
-      price: 1000,
-      type: "Villa",
+      name: "Badade Nagar Frozen",
+      price: 10044,
+      type: "Apartment",
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://asset.kompas.com/crops/rYHmAv4mfDvUMQC6OekMqb7j6EU=/0x202:1080x922/750x500/data/photo/2022/09/08/6319c1acd3086.jpg"),
+          "https://images.adsttc.com/media/images/637c/cc4e/db20/0f35/7400/b765/large_jpg/housing-apartment-at-badade-nagar-studio-frozen-music_1.jpg?1669123187"),
   House(
-      name: "Villa 1",
-      price: 1000,
+      name: "BQ Luxury Hotel",
+      price: 1700,
       type: "Villa",
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://asset.kompas.com/crops/rYHmAv4mfDvUMQC6OekMqb7j6EU=/0x202:1080x922/750x500/data/photo/2022/09/08/6319c1acd3086.jpg"),
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz7Jr_5LXJIBt3zQEb4_96Pb7EW8Cb2-8IQ6a3vihcDKNL2zw7NK6kZsQtpZMkNfVpsc4&usqp=CAU"),
   House(
-      name: "Villa 1",
-      price: 1000,
-      type: "Villa",
+      name: "Milan Pizza Domino",
+      price: 21000,
+      type: "rooms",
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://asset.kompas.com/crops/rYHmAv4mfDvUMQC6OekMqb7j6EU=/0x202:1080x922/750x500/data/photo/2022/09/08/6319c1acd3086.jpg")
+          "https://cf.bstatic.com/xdata/images/hotel/max1024x768/186088385.jpg?k=1319a04a655384b59af9987bfcc904a7db2c6bd6649829de7601adc224647f46&o=&hp=1")
 ];

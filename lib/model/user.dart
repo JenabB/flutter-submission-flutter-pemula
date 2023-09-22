@@ -18,5 +18,5 @@ var userDetails = User(
     address: "Pagar Alam, Indonesia",
     avatar:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbZxuvd6uVcPhfgpxFra5VswUeZSEfe7xYA&usqp=CAU",
-    email: "ziva@gmail.com",
+    email: "zivamagnolya19@gmail.com",
     phone: "+628098080");

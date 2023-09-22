@@ -3,6 +3,7 @@ import 'package:submission_dasar_flutter/model/house.dart';
 import 'package:submission_dasar_flutter/page/detail/room_item.dart';
 import 'package:submission_dasar_flutter/page/detail/room_overview.dart';
 import 'package:submission_dasar_flutter/page/detail/room_owner.dart';
+import 'package:submission_dasar_flutter/room_by_category.dart';
 
 class DetailScreen extends StatefulWidget {
   final House place;
@@ -129,11 +130,20 @@ class _DetailScreenState extends State<DetailScreen> {
                                 SizedBox(
                                   width: 10,
                                 ),
-                                Text(
-                                  widget.place.type,
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue),
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) {
+                                      return RoomByCategory(
+                                          category: widget.place.type);
+                                    }));
+                                  },
+                                  child: Text(
+                                    widget.place.type,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.blue),
+                                  ),
                                 )
                               ],
                             )

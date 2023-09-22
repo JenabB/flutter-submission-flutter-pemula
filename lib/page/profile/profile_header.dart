@@ -9,45 +9,45 @@ class ProfileHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100.0, // Sesuaikan dengan tinggi yang Anda inginkan
+      height: 100.0,
       child: Card(
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
-        child: Stack(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Column(
+            Row(
               children: [
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 15),
-                      child: CircleAvatar(
-                        backgroundImage: NetworkImage(user.avatar),
-                        radius: 30.0,
+                Container(
+                  margin: EdgeInsets.only(left: 10, right: 15),
+                  child: CircleAvatar(
+                    backgroundImage: NetworkImage(user.avatar),
+                    radius: 30.0,
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(top: 16),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        user.name,
+                        style: TextStyle(fontWeight: FontWeight.w700),
                       ),
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          user.name,
-                          style: TextStyle(fontWeight: FontWeight.w700),
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          user.email,
-                          style: secondText,
-                        ),
-                        SizedBox(height: 4),
-                        Text(
-                          user.phone,
-                          style: secondText,
-                        )
-                      ],
-                    ),
-                  ],
+                      SizedBox(height: 4),
+                      Text(
+                        user.email,
+                        style: secondText,
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        user.phone,
+                        style: secondText,
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),

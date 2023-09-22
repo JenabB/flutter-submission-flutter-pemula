@@ -7,7 +7,7 @@ class ProfileActivity extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
       child: Card(
         elevation: 0,
@@ -18,11 +18,6 @@ class ProfileActivity extends StatelessWidget {
           padding: EdgeInsets.all(10),
           child: Row(
             children: [
-              Icon(
-                Icons.nature_people,
-                color: Colors.blue,
-                size: 60.0,
-              ),
               SizedBox(width: 10),
               Expanded(
                 child: Column(
