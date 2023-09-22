@@ -38,10 +38,13 @@ class _DetailScreenState extends State<DetailScreen> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12.0),
-                      child: Image.network(
-                        widget.place.imageUrl,
-                        height: 300.0,
-                        fit: BoxFit.cover,
+                      child: AspectRatio(
+                        aspectRatio: 16 / 9,
+                        child: Image.network(
+                          widget.place.imageUrl,
+                          height: 300.0,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                     Positioned(
