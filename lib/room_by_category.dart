@@ -20,7 +20,8 @@ class _RoomByCategoryState extends State<RoomByCategory> {
   @override
   Widget build(BuildContext context) {
     final filteredItems = getFilteredItems();
-
+    double screenWidth = MediaQuery.of(context).size.width;
+    double containerWidth = screenWidth >= 480 ? 480 : screenWidth;
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -36,34 +37,37 @@ class _RoomByCategoryState extends State<RoomByCategory> {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Container(
-          padding: EdgeInsets.all(10.0),
-          child: Column(
-            children: [
-              if (filteredItems.isEmpty)
-                Center(
-                  child: Text("No house item for now :)"),
-                )
-              else
-                Expanded(
-                  child: GridView.count(
-                    crossAxisCount: 2,
-                    crossAxisSpacing: 8,
-                    mainAxisSpacing: 8,
-                    children: filteredItems.map((place) {
-                      return InkWell(
-                        onTap: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) {
-                            return DetailScreen(place: place);
-                          }));
-                        },
-                        child: HouseCardItem(place: place),
-                      );
-                    }).toList(),
+        child: Center(
+          child: Container(
+            width: containerWidth,
+            padding: EdgeInsets.all(10.0),
+            child: Column(
+              children: [
+                if (filteredItems.isEmpty)
+                  Center(
+                    child: Text("No house item for now :)"),
+                  )
+                else
+                  Expanded(
+                    child: GridView.count(
+                      crossAxisCount: 2,
+                      crossAxisSpacing: 8,
+                      mainAxisSpacing: 8,
+                      children: filteredItems.map((place) {
+                        return InkWell(
+                          onTap: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return DetailScreen(place: place);
+                            }));
+                          },
+                          child: HouseCardItem(place: place),
+                        );
+                      }).toList(),
+                    ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

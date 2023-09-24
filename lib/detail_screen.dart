@@ -25,12 +25,13 @@ class _DetailScreenState extends State<DetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double containerWidth = screenWidth >= 480 ? 480 : screenWidth;
     return Scaffold(
-      body: Container(
-        margin: EdgeInsets.all(2.0),
-        // height: 300.0,
-        width: MediaQuery.of(context).size.width,
-        child: SafeArea(
+      body: Center(
+        child: Container(
+          width: containerWidth,
+          margin: EdgeInsets.all(2.0),
           child: SingleChildScrollView(
             child: Column(
               children: [
@@ -38,13 +39,10 @@ class _DetailScreenState extends State<DetailScreen> {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(12.0),
-                      child: AspectRatio(
-                        aspectRatio: 16 / 9,
-                        child: Image.network(
-                          widget.place.imageUrl,
-                          height: 300.0,
-                          fit: BoxFit.cover,
-                        ),
+                      child: Image.network(
+                        widget.place.imageUrl,
+                        height: 300.0,
+                        fit: BoxFit.cover,
                       ),
                     ),
                     Positioned(

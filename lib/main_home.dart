@@ -9,17 +9,23 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(15),
-      child: ListView(
-        children: [
-          HomeHeader(),
-          const SizedBox(height: 15.0),
-          const HomeInfo(),
-          const SizedBox(height: 15.0),
-          const HomeCategories(),
-          HomePopular(gridCount: 2)
-        ],
+    double screenWidth = MediaQuery.of(context).size.width;
+    double containerWidth = screenWidth >= 480 ? 480 : screenWidth;
+
+    return Center(
+      child: Container(
+        width: containerWidth,
+        padding: const EdgeInsets.all(15),
+        child: ListView(
+          children: [
+            HomeHeader(),
+            const SizedBox(height: 15.0),
+            const HomeInfo(),
+            const SizedBox(height: 15.0),
+            const HomeCategories(),
+            HomePopular(gridCount: 2)
+          ],
+        ),
       ),
     );
   }

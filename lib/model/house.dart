@@ -47,7 +47,7 @@ var houseList = [
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://images.timesproperty.com/blog/4047/front_house_design.jpg"),
+          "https://hips.hearstapps.com/hmg-prod/images/screen-shot-2019-07-01-at-4-13-42-pm-1562012178.png?crop=1.00xw:0.891xh;0,0&resize=640:*"),
   House(
       name: "Jogjakarta Villa",
       price: 2000,
@@ -55,7 +55,7 @@ var houseList = [
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://static.jogjaasik.com/uploads/2019/05/7-Rekomendasi-Villa-Terbaik-Di-Jogja-Liburan-Mewah-Dengan-Budget-Murah-Meriah.jpg"),
+          "https://www.anekawisata.com/wp-content/uploads/2020/11/villa-di-jogja.jpg"),
   House(
       name: "Badade Nagar Frozen",
       price: 10044,
@@ -63,7 +63,7 @@ var houseList = [
       bedrooms: 3,
       livingRooms: 1,
       imageUrl:
-          "https://images.adsttc.com/media/images/637c/cc4e/db20/0f35/7400/b765/large_jpg/housing-apartment-at-badade-nagar-studio-frozen-music_1.jpg?1669123187"),
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRByTDTGmL2MUH6nEriIbZAqiqDX05ch6W35h9ZNKsVBKb3bGsb25_j0FZN4aU3tm4GIgU&usqp=CAU"),
   House(
       name: "BQ Luxury Hotel",
       price: 1700,

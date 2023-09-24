@@ -29,11 +29,11 @@ class HomeInfo extends StatelessWidget {
                   ),
                   const Text(
                     "Enjoy Exclusive Deals",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white, fontSize: 12.0),
                   ),
                   const Text(
                     "At Local Hotspots",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white, fontSize: 12.0),
                   ),
                   ElevatedButton(
                     onPressed: null,
